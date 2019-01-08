@@ -1,0 +1,432 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+    background-color: #c1c1c1;
+}
+
+#bodywrapper {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+
+
+footer {
+    font-size: 0.7em;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0.2rem;
+    background-color: #a2a2a2;
+    text-align: center;
+
+}
+
+img {
+    max-width: 100vw;
+}
+
+p {
+    font-family: 'Barlow',
+        sans-serif;
+}
+
+a {
+    font-family: 'Barlow',
+        sans-serif;
+}
+
+li {
+    font-family: 'Cinzel',
+        serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Cinzel',
+        serif;
+}
+
+
+
+/*/////////////// fonts /////////////////*/
+
+/*
+font-family: 'Parisienne',
+cursive;
+font-family: 'Alex Brush',
+cursive;
+font-family: 'Barlow',
+sans-serif;
+font-family: 'Cinzel',
+serif;
+*/
+
+/*/////////////// NAVIGATION /////////////////*/
+
+.hidden {
+    transform: translateX(-150%);
+}
+
+#menuknap {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 4vh;
+    padding: 0.5rem;
+}
+
+#menu {
+    list-style-type: none;
+    transition: transform 0.5s;
+    transform-origin: top left;
+    text-decoration: none;
+    color: #b2ada6;
+    position: absolute;
+    background-color: rgba(5, 3, 3, 0.78);
+    z-index: 10;
+}
+
+#menu a {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+/*/////////////// Go to Top button /////////////////*/
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgba(36, 109, 45, 0.79);
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 2rem;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+/*/////////////// Generel opbygning /////////////////*/
+#splash {
+    margin-bottom: 5%;
+    width: 100vw;
+    left: 0;
+
+}
+
+#splash img {
+    width: 100%;
+    max-height: 25vw;
+    object-fit: cover;
+}
+
+#overskrift {
+    margin: 3%;
+}
+
+#sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#sectionwrapper2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+
+
+/*/////////////// Forside /////////////////*/
+#bodyforside {
+    background-image: url(billeder/dyrehaven_baggrund.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 35%;
+
+}
+
+
+#signature {
+    top: 8vh;
+    position: absolute;
+    font-size: 3rem;
+    margin-left: 20%;
+    font-family: 'Parisienne',
+        cursive;
+}
+
+
+
+/*/////////////// ABOUT /////////////////*/
+
+#cv {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#cv .column {
+    flex-grow: 1;
+    flex-basis: 400px;
+}
+
+#qi_materiale {
+    font-size: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#qi_materiale img {
+    height: 30vw;
+
+}
+
+#qi_materiale .column {
+    flex-grow: 1;
+    flex-basis: 200px;
+    text-align: center;
+}
+
+#hobby_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+
+#hobby_wrapper .column {
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+
+.instarow {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.instabillede img {
+    width: 95%;
+    padding: 2% 2% 0 2%;
+}
+
+
+#video video {
+    width: 100%;
+    padding: 5%;
+
+}
+
+#video iframe {
+    width: 100%;
+    padding: 5%;
+}
+
+@media screen and (min-width:700px) {
+    #video iframe {
+        min-height: 400px;
+    }
+
+}
+
+
+#video {
+    justify-content: center;
+}
+
+.instabillede {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/*/////////////// Redesign /////////////////*/
+#links {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.link {
+    background-color: #4d4d4d;
+    color: white;
+    border: solid black;
+    padding: 14px 25px;
+    margin: 1rem;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.link:hover,
+a:active {
+    background-color: #909090;
+
+}
+
+#bodyredesign video {
+    width: 95%;
+    padding: 5%;
+
+}
+
+#bodyredesign iframe {
+    min-height: 50vh;
+    width: 100%
+}
+
+/*/////////////// Responsivt /////////////////*/
+
+#bodyresp #column_text {
+    margin: 5%;
+}
+
+.moodboard img {
+    max-width: 90vw;
+    margin-top: 1rem;
+}
+
+#bodyresp iframe {
+    min-height: 65vh;
+    width: 100%
+}
+
+
+
+/*/////////////// Pilot /////////////////*/
+
+#bodypilot .column img {
+    max-width: 100%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#bodypilot iframe {
+    width: 100%;
+    min-height: 300px
+}
+
+@media screen and (min-width:700px) {
+    #bodypilot iframe {
+        min-height: 400px;
+    }
+
+}
+
+@media screen and (min-width:700px) {
+    #bodypilot iframe {
+        max-width: 700px;
+    }
+
+}
+
+/*/////////////// Eget spil /////////////////*/
+
+#spil_dokumentation img {
+    max-width: 85%;
+}
+
+#spil_dokumentation {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.spil_column {
+    flex-basis: 200px;
+    flex-grow: 1;
+
+}
+
+/*/////////////// Design sprint /////////////////*/
+
+#body_designsprint .column img {
+    width: 95%;
+}
+
+#body_designsprint #section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#body_designsprint .column {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 0 5%;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+/*/////////////// Native /////////////////*/
+
+#body_native #sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#body_native .column {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 400px;
+    flex-grow: 1;
+}
+
+#body_native .screens {
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+
+#body_native .column img {
+    max-width: 85%;
+    margin: 2%;
+}
+
+/*/////////////  gruppespil ///////////////////////*/
+#body_sex iframe {
+    width: 60%;
+    height: 60%;
+}
+
+
+/*/////////////  prototype ///////////////////////*/
+
+#body_proto iframe {
+    width: 375px;
+    height: 588px;
+}
